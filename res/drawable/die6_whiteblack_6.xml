@@ -2,8 +2,8 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:top="0dp" android:left="0dp" android:bottom="0dp" android:right="0dp">
         <shape android:shape="rectangle">
-            <size android:width="13dp"
-                  android:height="13dp"/>
+            <size android:width="17dp"
+                  android:height="17dp"/>
             <solid android:color="@color/white"/>
             <stroke
                     android:width="0.1dp"
@@ -17,21 +17,21 @@
     </item>
 
     <!-- row 1 -->
-    <item android:top="1dp" android:left="1dp" android:bottom="9dp" android:right="9dp" android:drawable="@drawable/circle_black">
+    <item android:top="2dp" android:left="2dp" android:bottom="12dp" android:right="12dp" android:drawable="@drawable/circle_black">
     </item>
-    <item android:top="1dp" android:left="9dp" android:bottom="9dp" android:right="1dp" android:drawable="@drawable/circle_black">
+    <item android:top="2dp" android:left="12dp" android:bottom="12dp" android:right="2dp" android:drawable="@drawable/circle_black">
     </item>
 
     <!-- row 2 -->
-    <item android:top="5dp" android:left="1dp" android:bottom="5dp" android:right="9dp" android:drawable="@drawable/circle_black">
+    <item android:top="7dp" android:left="2dp" android:bottom="7dp" android:right="12dp" android:drawable="@drawable/circle_black">
     </item>
-    <item android:top="5dp" android:left="9dp" android:bottom="5dp" android:right="1dp" android:drawable="@drawable/circle_black">
+    <item android:top="7dp" android:left="12dp" android:bottom="7dp" android:right="2dp" android:drawable="@drawable/circle_black">
     </item>
 
     <!-- row 3 -->
-    <item android:top="9dp" android:left="1dp" android:bottom="1dp" android:right="9dp" android:drawable="@drawable/circle_black">
+    <item android:top="12dp" android:left="2dp" android:bottom="2dp" android:right="12dp" android:drawable="@drawable/circle_black">
     </item>
-    <item android:top="9dp" android:left="9dp" android:bottom="1dp" android:right="1dp" android:drawable="@drawable/circle_black">
+    <item android:top="12dp" android:left="12dp" android:bottom="2dp" android:right="2dp" android:drawable="@drawable/circle_black">
     </item>
 
 </layer-list>
