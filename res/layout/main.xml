@@ -47,6 +47,34 @@
                 android:id="@+id/die7"/>
 
     </LinearLayout>
+
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center">
+        <TextView
+                android:layout_width="35dp"
+                android:layout_height="50dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="9"
+                android:gravity="center"
+                android:background="@drawable/die10_white"
+                android:id="@+id/die8"/>
+        <TextView
+                android:layout_width="35dp"
+                android:layout_height="50dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="9"
+                android:gravity="center"
+                android:background="@drawable/die10_red"
+                android:id="@+id/die9"/>
+
+    </LinearLayout>
+
     <LinearLayout android:orientation="horizontal"
                   android:layout_width="fill_parent"
                   android:layout_height="wrap_content"

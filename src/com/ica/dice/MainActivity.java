@@ -15,9 +15,12 @@ public class MainActivity extends Activity {
 	private ImageView imgDie5;
     private ImageView imgDie6;
     private ImageView imgDie7;
-    
+    private TextView imgDie8;
+    private TextView imgDie9;
+
 	private Button btnDiceRoll;
 	private Dice dice = new Dice(7,1,6);
+    private Dice dice10 = new Dice(2,0,9);
 
     /**
      * Called when the activity is first created.
@@ -34,7 +37,9 @@ public class MainActivity extends Activity {
         imgDie5 = (ImageView)findViewById(R.id.die5);
         imgDie6 = (ImageView)findViewById(R.id.die6);
         imgDie7 = (ImageView)findViewById(R.id.die7);
-        
+        imgDie8 = (TextView)findViewById(R.id.die8);
+        imgDie9 = (TextView)findViewById(R.id.die9);
+
 		btnDiceRoll = (Button)findViewById(R.id.buttonRoll);
 
 		imgDie1.setOnClickListener(new OnClickListener() {
@@ -87,11 +92,27 @@ public class MainActivity extends Activity {
                 displayDice();
             }
         });
-        
+
+        imgDie8.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                dice10.increment(0);
+                displayDice();
+            }
+        });
+        imgDie9.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                dice10.increment(1);
+                displayDice();
+            }
+        });
+
         btnDiceRoll.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {				
 				dice.roll();
+                dice10.roll();
 				displayDice();				
 			}
 		});
@@ -105,6 +126,9 @@ public class MainActivity extends Activity {
         imgDie5.setImageResource(getBlackWhiteDieResource(dice.getDie(4)));
         imgDie6.setImageResource(getBlackRedDieResource(dice.getDie(5)));
         imgDie7.setImageResource(getYellowBlackDieResource(dice.getDie(6)));
+
+        imgDie8.setText(Integer.toString(dice10.getDie(0)));
+        imgDie9.setText(Integer.toString(dice10.getDie(1)));
         /*
 		imgDie1.setImageResource(getDieResource(dice.getDie(0), "die6_whiteblack"));
 		imgDie2.setImageResource(getDieResource(dice.getDie(1), "die6_redwhite"));
